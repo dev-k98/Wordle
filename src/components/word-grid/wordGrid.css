@@ -1,0 +1,48 @@
+.input-section {
+	display: flex;
+}
+
+.tile {
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 65px;
+	width: 65px;
+	font-size: 28px;
+	margin: 2px;
+	color: #ffffff;
+	border: 1px solid rgb(139, 139, 139);
+	background-color: #121213;
+}
+
+.active {
+	border: 3px solid rgb(59, 57, 57);
+}
+
+.attempted {
+	border: 3px solid #1f242d;
+}
+
+.correct {
+	background-color: green;
+	border: 3px solid green;
+	animation: flip 0.31s ease;
+}
+
+.absent {
+	background-color: #1f242d;
+	border: 3px solid #1f242d;
+}
+
+.present {
+	background-color: yellow;
+	border: 3px solid yellow;
+	animation: flip 0.31s ease;
+}
+
+@keyframes flip {
+	100% {
+		transform: rotateX(360deg);
+	}
+}
